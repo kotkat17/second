@@ -1,0 +1,55 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Georgia', sans-serif;
+  font-size: 14px;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'pages/home';
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+
