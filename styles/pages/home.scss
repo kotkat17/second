@@ -1,0 +1,237 @@
+.slide-section {
+  background-color: $secondaryColor;
+  color: $headerTextColor;
+
+  .underheader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    display: inline-block;
+  }
+
+  .logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #f3f3f3;
+    padding-right: 20px;
+
+    span {
+      font-size: 46px;
+    }
+  }
+
+  .search {
+    padding-top: 15px;
+
+    input {
+      padding: 8px;
+      padding-right: 40px;
+      color: $headerTextColor;
+      background-color: $primaryColor;
+      border: 0;
+    }
+
+    button {
+      color: #f3f3f3;
+      padding: 10px 8px 8px;
+      background-color: $thirdColor;
+      margin-left: -4px;
+      font-size: 12px;
+      font-weight: normal;
+    }
+  }
+
+  .slider {
+    z-index: 9;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    ul, li {
+      padding: 0;
+      margin: 0;
+    }
+
+    ul {
+      width: 9999px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .nav {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      left: 15px;
+      bottom: 12px;
+    }
+
+    .nav span {
+      opacity: 0.9;
+      background: #fff;
+      margin: 0 8px 0 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      overflow: hidden;
+      display: block;
+      box-shadow: 0 1px 2px #000;
+
+      &.on {
+        background: $thirdColor;
+      }
+    }
+  }
+}
+
+.middle {
+  background-color: darken($titleColor, 6);
+  border-top: 15px solid $thirdColor;
+
+  .breadcrumb {
+    display: flex;
+    justify-content: start;
+    background-color: darken($titleColor, 3);
+    padding: 15px 15px 15px 30px;
+    color: $headerTextColor;
+
+    a {
+      padding-left: 5px;
+      color: $thirdColor;
+    }
+  }
+  
+  .shout {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #dddddd;
+    text-align: center;
+    border-top: 2px solid darken($titleColor, 6);
+    border-bottom: 1px solid darken($titleColor, 6);
+    background-color: $titleColor;
+
+    h1 {
+      font-size: 64px;
+      font-weight: normal;
+    }
+
+    span {
+      font-size: 80px;
+    }
+
+    p {
+      padding: 10px 30px 0 30px;
+      font-size: 26px;
+      color: darken(#dddddd, 20);
+      font-style: italic;
+    }
+  }
+
+  .intro {
+    background-color: $titleColor;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    .grid {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        color: $textColor;
+        font-weight: normal;
+        padding-top: 50px;
+      }
+
+      p {
+        color: $textColor;
+        line-height: 1.5;
+        padding-top: 5px;
+      }
+    }
+
+    .left {
+      max-width: 50%;
+      padding-right: 10px;
+    }
+
+    .content {
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+
+    .headline {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      h4 {
+        padding-left: 10px;
+      }
+
+      span {
+        font-weight: normal;
+      }
+    }
+
+    .right {
+
+      .persons {
+        padding-left: 5px;
+      }
+
+      img {
+        border: 3px solid $titleColor;
+        box-shadow: 0.5px 0.5px 0.5px 0.5px darken($titleColor, 20)
+      }
+
+      p {
+        padding-left:10px;
+      }
+
+      h4 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .latest-work {
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      max-width: 210px;
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    img {
+      max-width: 210px;
+      box-shadow: 0px 18px 12px -13px rgba(0,0,0,0.68);
+    }
+
+    h2 {
+      font-weight: normal;
+      color: $textColor;
+    }
+
+    p {
+      color: lighten($textColor, 15);
+      padding: 20px 5px 10px 0px;
+    }
+
+    a {
+      color: $thirdColor;
+    }
+  }
+}
